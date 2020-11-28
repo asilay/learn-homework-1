@@ -15,12 +15,25 @@
 
 """
 
+
+def strings_input(string1, string2):
+    if string1.isdigit() or string2.isdigit():
+        return 0
+    elif string1 == string2:
+        return 1
+    elif string2.lower() == "learn":
+        return 3
+    elif len(string1) > len(string2):
+        return 2
+
+
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
-    
+    a = strings_input(
+        input("Put the first string: "),
+        input("Fill with the second string: "),
+    )
+    print(a)
+
+
 if __name__ == "__main__":
     main()

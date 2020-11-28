@@ -8,14 +8,11 @@
   пользователя “Как дела?”, пока он не ответит “Хорошо”
    
 """
-
-
 def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
-
+    while True:
+        if input("Как дела? ").capitalize() == 'Хорошо':
+            break 
+hello_user()
     
 if __name__ == "__main__":
     hello_user()

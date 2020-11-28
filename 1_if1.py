@@ -14,12 +14,23 @@
 
 """
 
+
+def edication(a):
+    if a < 8:
+        return "You should go to kindergrden"
+    elif a < 19:
+        return "You should study at school"
+    elif a < 25:
+        return "You'd better study at university"
+    else:
+        return "You've already studied enough, now go to work"
+
+
 def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+    age = int(input("Please fill your age here: "))
+    result = edication(age)
+    print(result)
+
 
 if __name__ == "__main__":
     main()
